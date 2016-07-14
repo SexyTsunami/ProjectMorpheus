@@ -2,9 +2,9 @@
 using System.Collections;
 
 public class RetroPlanet : PixelAssetRP {
-
-	public int radius = 32;
-	public Color highlightColor = Color.cyan;
+    public int radius = 32;
+    //private int radius = Random.Range(400,500); <<always = zero dunno why??
+    public Color highlightColor = Color.cyan;
 	public Color shadeColor = Color.black;
 	[Range(0f, 2.01f)]
 	public float shadeWidth = 0.7f;
@@ -20,7 +20,7 @@ public class RetroPlanet : PixelAssetRP {
 
 		PixelToolRP.DrawFilledCircle(texture, shadeColor, new Vector2(centerX, centerY), radius);
 
-		for(int y = -radius; y <= radius; y++) {
+        for (int y = -radius; y <= radius; y++) {
 			int x1 = (int)Mathf.Sqrt(radius * radius - y * y);
 			for(int x = -x1; x <= x1; x++) {
 				float n = Random.Range(0, x1) * (2.01f-shadeWidth);
