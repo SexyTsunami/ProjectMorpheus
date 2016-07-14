@@ -6,10 +6,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F201F489-9F11-FEFE-4B33-81E024BF2409}</ProjectGuid>
+    <ProjectGuid>{A947905C-34A7-9648-9BD1-35D97C4237FA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -45,52 +45,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Resources\Done\Done_Scripts\Done_BGScroller.cs" />
-     <Compile Include="Assets\Resources\Done\Done_Scripts\Done_DestroyByBoundary.cs" />
-     <Compile Include="Assets\Resources\Done\Done_Scripts\Done_DestroyByContact.cs" />
-     <Compile Include="Assets\Resources\Done\Done_Scripts\Done_DestroyByTime.cs" />
-     <Compile Include="Assets\Resources\Done\Done_Scripts\Done_EvasiveManeuver.cs" />
-     <Compile Include="Assets\Resources\Done\Done_Scripts\Done_GameController.cs" />
-     <Compile Include="Assets\Resources\Done\Done_Scripts\Done_Mover.cs" />
-     <Compile Include="Assets\Resources\Done\Done_Scripts\Done_PlayerController.cs" />
-     <Compile Include="Assets\Resources\Done\Done_Scripts\Done_RandomRotator.cs" />
-     <Compile Include="Assets\Resources\Done\Done_Scripts\Done_WeaponController.cs" />
-     <Compile Include="Assets\Resources\Scripts\RandomRotator.cs" />
-     <Compile Include="Assets\Resources\Scripts\collisions\DestroyByBoundary.cs" />
-     <Compile Include="Assets\Resources\Scripts\collisions\DestroyByContact.cs" />
-     <Compile Include="Assets\Resources\Scripts\collisions\DestroyByTime.cs" />
-     <Compile Include="Assets\Resources\Scripts\collisions\SplitByContact.cs" />
-     <Compile Include="Assets\Resources\Scripts\controllers\AlternatingWeaponController.cs" />
-     <Compile Include="Assets\Resources\Scripts\controllers\AlternatingWeaponController2.cs" />
-     <Compile Include="Assets\Resources\Scripts\controllers\EngineController.cs" />
-     <Compile Include="Assets\Resources\Scripts\controllers\GameController.cs" />
-     <Compile Include="Assets\Resources\Scripts\controllers\Main.cs" />
-     <Compile Include="Assets\Resources\Scripts\controllers\PlayerController.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\AtomicMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\CosineSpinMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\FlowerMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\InfinitySignMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\SawToothMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\SineMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\SineSpinMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\SinewithAngleChangeMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\SpiralMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\SplitMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\SprayMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\StarMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\movers\StraightMover.cs" />
-     <Compile Include="Assets\Resources\Scripts\properties\CollisionProps.cs" />
-     <Compile Include="Assets\Resources\Scripts\properties\ObjectProps.cs" />
-     <Compile Include="Assets\Resources\Scripts\properties\PlayerCollisionProps.cs" />
-     <Compile Include="Assets\Retro Planets\Scripts\PixelAssetRP.cs" />
-     <Compile Include="Assets\Retro Planets\Scripts\PixelToolRP.cs" />
-     <Compile Include="Assets\Retro Planets\Scripts\RetroPlanet.cs" />
+     <Compile Include="Assets\Retro Planets\Editor\PixelAssetEditorRP.cs" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{F201F489-9F11-FEFE-4B33-81E024BF2409}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
