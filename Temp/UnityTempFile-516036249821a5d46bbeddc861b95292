@@ -96,6 +96,7 @@ Assets/Resources/Scripts/controllers/AlternatingWeaponController.cs
 Assets/Resources/Scripts/controllers/AlternatingWeaponController2.cs
 Assets/Resources/Scripts/controllers/EngineController.cs
 Assets/Resources/Scripts/controllers/GameController.cs
+Assets/Resources/Scripts/controllers/Main.cs
 Assets/Resources/Scripts/controllers/PlayerController.cs
 Assets/Resources/Scripts/movers/AtomicMover.cs
 Assets/Resources/Scripts/movers/CosineSpinMover.cs
