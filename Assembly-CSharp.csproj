@@ -65,6 +65,8 @@
      <Compile Include="Assets\Resources\Scripts\controllers\EngineController.cs" />
      <Compile Include="Assets\Resources\Scripts\controllers\GameController.cs" />
      <Compile Include="Assets\Resources\Scripts\controllers\Main.cs" />
+     <Compile Include="Assets\Resources\Scripts\controllers\Movement.cs" />
+     <Compile Include="Assets\Resources\Scripts\controllers\Movement2.cs" />
      <Compile Include="Assets\Resources\Scripts\controllers\PlayerController.cs" />
      <Compile Include="Assets\Resources\Scripts\movers\AtomicMover.cs" />
      <Compile Include="Assets\Resources\Scripts\movers\CosineSpinMover.cs" />
@@ -82,6 +84,7 @@
      <Compile Include="Assets\Resources\Scripts\properties\CollisionProps.cs" />
      <Compile Include="Assets\Resources\Scripts\properties\ObjectProps.cs" />
      <Compile Include="Assets\Resources\Scripts\properties\PlayerCollisionProps.cs" />
+     <Compile Include="Assets\Retro Planets\Scripts\Bullet2.cs" />
      <Compile Include="Assets\Retro Planets\Scripts\PixelAssetRP.cs" />
      <Compile Include="Assets\Retro Planets\Scripts\PixelToolRP.cs" />
      <Compile Include="Assets\Retro Planets\Scripts\RetroPlanet.cs" />
